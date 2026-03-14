@@ -1,61 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
 <meta charset="UTF-8">
-<title>Memory Integration System</title>
+<title>Memory Integration System v4.0</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="loading">
-
+<div id="loading-screen">
 <h1>MEMORY INTEGRATION SYSTEM</h1>
+<p class="version">Version 4.0</p>
 
-<p>Initializing pipeline...</p>
+<div class="terminal">
+<p>Initializing data pipeline...</p>
+<p>Connecting to memory database...</p>
+<p>Scanning shared experiences...</p>
+</div>
 
 <div class="progress">
 <div class="bar"></div>
 </div>
-
-<p class="status">Scanning shared experiences...</p>
-
 </div>
 
 
-<div class="main">
+<div id="main-content">
+
+<section class="hero">
+
+<h2>Memory Integration System</h2>
+
+<div class="pipeline">
+
+<div class="node">Work Events</div>
+<div class="line"></div>
+
+<div class="node">Memory Processing</div>
+<div class="line"></div>
+
+<div class="node">Archive</div>
+<div class="line"></div>
+
+<div class="node highlight">Legend v4.0</div>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+<h3>Data collected</h3>
+<p>2.5 years</p>
+</div>
+
+<div class="card">
+<h3>Records found</h3>
+<p id="memoryCount">24</p>
+</div>
+
+<div class="card">
+<h3>System status</h3>
+<p>STABLE</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="timeline">
 
 <h2>Memory Timeline</h2>
 
-<div class="timeline">
+<div class="timeline-grid">
 
-<div class="event">
+<div class="year">
 <h3>2023</h3>
-<p>Start of the journey</p>
+<p>Initialization phase</p>
 </div>
 
-<div class="event">
+<div class="year">
 <h3>2024</h3>
-<p>Epic integrations</p>
+<p>Integration chaos</p>
 </div>
 
-<div class="event">
+<div class="year">
 <h3>2025</h3>
 <p>Team adventures</p>
 </div>
 
-<div class="event">
+<div class="year">
 <h3>2026</h3>
-<p>LEVEL 4.0</p>
+<p>Version 4.0 released</p>
 </div>
 
 </div>
 
+</section>
 
-<button id="memoryBtn">Generate Memory</button>
 
-<p id="memoryText"></p>
+<section class="random">
+
+<h2>Random Memory Query</h2>
+
+<button id="queryBtn">RUN RANDOM QUERY</button>
+
+<div id="queryResult"></div>
+
+</section>
+
+
+<section class="report">
+
+<h2>System Report</h2>
+
+<div class="terminal-box">
+
+<p>Name: Marek</p>
+<p>Version: 4.0</p>
+<p>Experience: 40 years</p>
+<p>Subsystem: Work Crew</p>
+<p>Status: LEGENDARY</p>
+
+</div>
+
+</section>
 
 </div>
 
