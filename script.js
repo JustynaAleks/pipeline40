@@ -18,3 +18,14 @@ const element = document.getElementById("randomImage");
 element.src = "images/" + image;
 
 }
+
+window.onload = function(){
+
+setTimeout(function(){
+
+document.getElementById("bootScreen").style.display="none";
+document.body.classList.remove("loadingState");
+
+},3000);
+
+}
