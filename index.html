@@ -1,135 +1,170 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 <meta charset="UTF-8">
 <title>Memory Integration System v4.0</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="loading-screen">
-<h1>MEMORY INTEGRATION SYSTEM</h1>
-<p class="version">Version 4.0</p>
-
-<div class="terminal">
-<p>Initializing data pipeline...</p>
-<p>Connecting to memory database...</p>
-<p>Scanning shared experiences...</p>
-</div>
-
-<div class="progress">
-<div class="bar"></div>
+<!-- LOADING -->
+<div class="loading">
+<h1>Memory Integration System</h1>
+<p>Initializing pipeline...</p>
+<div class="pipeline">
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
 </div>
 </div>
 
-
-<div id="main-content">
-
+<!-- HERO -->
 <section class="hero">
 
-<h2>Memory Integration System</h2>
+<h1>Marek</h1>
+<h2>Memory Integration System v4.0</h2>
 
-<div class="pipeline">
+<p>Primary Stack: SQL / Azure</p>
+<p>Status: Legendary</p>
 
-<div class="node">Work Events</div>
-<div class="line"></div>
+<img src="images/marek (16).jpg">
 
-<div class="node">Memory Processing</div>
-<div class="line"></div>
+</section>
 
-<div class="node">Archive</div>
-<div class="line"></div>
+<!-- SQL SECTION -->
 
-<div class="node highlight">Legend v4.0</div>
+<section class="sql">
 
-</div>
+<h2>Querying memory database...</h2>
 
-<div class="stats">
+<pre>
+SELECT *
+FROM marek_memories
+WHERE year >= 2023
+ORDER BY fun DESC
+</pre>
 
-<div class="card">
-<h3>Data collected</h3>
-<p>2.5 years</p>
-</div>
+<div class="sql-result">
 
-<div class="card">
-<h3>Records found</h3>
-<p id="memoryCount">24</p>
-</div>
-
-<div class="card">
-<h3>System status</h3>
-<p>STABLE</p>
-</div>
+<p>dancefloor_presence : HIGH</p>
+<p>coffee_dependency : CRITICAL</p>
+<p>integration_attendance : 100%</p>
+<p>team_morale : BOOSTED</p>
+<p>humour_module : ENABLED</p>
 
 </div>
 
 </section>
 
+<!-- TIMELINE -->
 
 <section class="timeline">
 
-<h2>Memory Timeline</h2>
+<h2>Initialization Phase</h2>
 
-<div class="timeline-grid">
-
-<div class="year">
-<h3>2023</h3>
-<p>Initialization phase</p>
+<div class="memory">
+<img src="images/marek (3).jpg">
+<p>First integrations detected</p>
 </div>
 
-<div class="year">
-<h3>2024</h3>
-<p>Integration chaos</p>
+<div class="memory">
+<img src="images/marek (6).jpg">
+<p>Team bonding started</p>
 </div>
 
-<div class="year">
-<h3>2025</h3>
-<p>Team adventures</p>
+<h2>Integration Phase</h2>
+
+<div class="memory">
+<img src="images/marek (10).jpg">
+<p>Mobile integration environment</p>
 </div>
 
-<div class="year">
-<h3>2026</h3>
-<p>Version 4.0 released</p>
+<div class="memory">
+<img src="images/marek (15).jpg">
+<p>System running smoothly</p>
 </div>
 
+<h2>Production Environment</h2>
+
+<div class="memory">
+<img src="images/marek (20).jpg">
+<p>Full team deployment</p>
+</div>
+
+<div class="memory">
+<img src="images/marek (24).jpg">
+<p>Seasonal deployment completed</p>
+</div>
+
+<h2>Version 4.0</h2>
+
+<div class="memory">
+<img src="images/marek (17).jpg">
+<p>Energy module activated</p>
+</div>
+
+<div class="memory">
+<img src="images/marek (28).jpg">
+<p>Latest build deployed</p>
 </div>
 
 </section>
 
+<!-- RANDOM MEMORY -->
 
 <section class="random">
 
-<h2>Random Memory Query</h2>
+<h2>Random Memory Generator</h2>
 
-<button id="queryBtn">RUN RANDOM QUERY</button>
+<button onclick="randomMemory()">Generate memory</button>
 
-<div id="queryResult"></div>
+<img id="randomImage">
 
 </section>
 
+<!-- GALLERY -->
 
-<section class="report">
+<section class="gallery">
 
-<h2>System Report</h2>
+<h2>Memory Archive</h2>
 
-<div class="terminal-box">
+<div class="grid">
 
-<p>Name: Marek</p>
-<p>Version: 4.0</p>
-<p>Experience: 40 years</p>
-<p>Subsystem: Work Crew</p>
-<p>Status: LEGENDARY</p>
+<img src="images/marek (1).jpg">
+<img src="images/marek (2).jpg">
+<img src="images/marek (3).jpg">
+<img src="images/marek (4).jpg">
+<img src="images/marek (5).jpg">
+<img src="images/marek (6).jpg">
+<img src="images/marek (7).jpg">
+<img src="images/marek (8).jpg">
+<img src="images/marek (9).jpg">
+<img src="images/marek (10).jpg">
+<img src="images/marek (11).jpg">
+<img src="images/marek (12).jpg">
+<img src="images/marek (13).jpg">
+<img src="images/marek (14).jpg">
+<img src="images/marek (15).jpg">
+<img src="images/marek (16).jpg">
+<img src="images/marek (17).jpg">
+<img src="images/marek (18).jpg">
+<img src="images/marek (19).jpg">
+<img src="images/marek (20).jpg">
+<img src="images/marek (21).jpg">
+<img src="images/marek (22).jpg">
+<img src="images/marek (23).jpg">
+<img src="images/marek (24).jpg">
+<img src="images/marek (25).jpg">
+<img src="images/marek (26).jpg">
+<img src="images/marek (27).jpg">
+<img src="images/marek (28).jpg">
+<img src="images/marek (29).jpg">
 
 </div>
 
 </section>
-
-</div>
 
 <script src="script.js"></script>
 
