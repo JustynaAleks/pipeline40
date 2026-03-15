@@ -1,13 +1,10 @@
+```css
 body{
 background:#0b0f14;
 color:#00ff9c;
 font-family:monospace;
 margin:0;
 text-align:center;
-}
-
-h1,h2,h3{
-font-weight:400;
 }
 
 .loading{
@@ -29,13 +26,8 @@ border-radius:50%;
 animation:flow 1.2s infinite;
 }
 
-.dot:nth-child(2){
-animation-delay:0.2s;
-}
-
-.dot:nth-child(3){
-animation-delay:0.4s;
-}
+.dot:nth-child(2){animation-delay:0.2s;}
+.dot:nth-child(3){animation-delay:0.4s;}
 
 @keyframes flow{
 0%{opacity:0.2}
@@ -80,7 +72,6 @@ margin:40px;
 .memory img{
 width:250px;
 border-radius:8px;
-margin-top:10px;
 }
 
 .random{
@@ -89,7 +80,6 @@ padding:60px;
 
 .random img{
 width:300px;
-margin-top:20px;
 border-radius:10px;
 }
 
@@ -98,7 +88,6 @@ padding:10px 20px;
 background:#00ff9c;
 border:none;
 cursor:pointer;
-font-weight:bold;
 border-radius:6px;
 }
 
@@ -139,3 +128,4 @@ column-count:2;
 column-count:1;
 }
 }
+```
