@@ -1,41 +1,20 @@
-```javascript
-function randomMemory(){
 
 const images = [
-"marek1.jpeg",
-"marek2.jpeg",
-"marek3.jpeg",
-"marek4.jpeg",
-"marek5.jpeg",
-"marek6.jpeg",
-"marek7.jpeg",
-"marek8.jpeg",
-"marek9.jpeg",
-"marek10.jpeg",
-"marek11.jpeg",
-"marek12.jpeg",
-"marek13.jpeg",
-"marek14.jpeg",
-"marek15.jpeg",
-"marek16.jpeg",
-"marek17.jpeg",
-"marek18.jpeg",
-"marek19.jpeg",
-"marek20.jpeg",
-"marek21.jpeg",
-"marek22.jpeg",
-"marek23.jpeg",
-"marek24.jpeg",
-"marek25.jpeg",
-"marek26.jpeg",
-"marek27.jpeg",
-"marek28.jpeg",
-"marek29.jpeg"
+"marek1.jpeg","marek2.jpeg","marek3.jpeg","marek4.jpeg","marek5.jpeg",
+"marek6.jpeg","marek7.jpeg","marek8.jpeg","marek9.jpeg","marek10.jpeg",
+"marek11.jpeg","marek12.jpeg","marek13.jpeg","marek14.jpeg","marek15.jpeg",
+"marek16.jpeg","marek17.jpeg","marek18.jpeg","marek19.jpeg","marek20.jpeg",
+"marek21.jpeg","marek22.jpeg","marek23.jpeg","marek24.jpeg","marek25.jpeg",
+"marek26.jpeg","marek27.jpeg","marek28.jpeg","marek29.jpeg"
 ];
 
-const random = images[Math.floor(Math.random()*images.length)];
+function randomMemory(){
 
-document.getElementById("randomImage").src="images/"+random;
+const randomIndex = Math.floor(Math.random()*images.length);
+const image = images[randomIndex];
+
+const element = document.getElementById("randomImage");
+
+element.src = "images/" + image;
 
 }
-```
