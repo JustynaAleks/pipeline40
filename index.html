@@ -1,107 +1,70 @@
-
+```html
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Memory Integration System</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="loadingState">
+
+<!-- BOOT SCREEN -->
 <div id="bootScreen">
-
-<h1>Memory Integration System</h1>
-
+<h1 class="glow">Memory Integration System</h1>
 <p>Booting Azure Memory Pipeline...</p>
 
 <div class="progress-bar">
 <div class="progress"></div>
 </div>
 
-<p class="bootText">Loading memories...</p>
-
+<p>Loading memories...</p>
 </div>
 
-<section class="hero">
+<!-- MAIN -->
+<div class="main">
 
+<h1 class="glow">Memory Integration System</h1>
 <h2>Marek</h2>
-<h3>Memory Integration System v4.0</h3>
 
+<p>Version: 4.0</p>
 <p>Primary Stack: SQL / Azure</p>
-<p>Status: Legendary</p>
 
-<img src="images/marek7.jpeg">
+<!-- SQL SECTION -->
+<div class="azureBox">
 
-</section>
+<p>SELECT * FROM marek_memories</p>
+<p>WHERE year >= 2023</p>
+<p>ORDER BY fun DESC</p>
 
-<section class="sql">
+<br>
 
-<h2>Querying memory database...</h2>
+<p><b>Result:</b></p>
 
-<pre>
-SELECT *
-FROM marek_memories
-WHERE year >= 2023
-ORDER BY fun DESC
-</pre>
-
-<div class="sql-result">
-
-<p>dancefloor_presence : HIGH</p>
-<p>hot_chocolate_with_marshmallows : CRITICAL</p>
-<p>integration_attendance : 100%</p>
-<p>team_morale : BOOSTED</p>
-<p>humour_module : ENABLED</p>
+<p>✔ Dancefloor mode: ENABLED</p>
+<p>✔ Humour engine: ACTIVE</p>
+<p>✔ Hot chocolate with marshmallows: CRITICAL</p>
+<p>✔ Legendary integrations: 100%</p>
 
 </div>
 
-</section>
-
-<section class="timeline">
-
-<h2>Memory Timeline</h2>
-
-<div class="memory">
-<h3>Integration Trips</h3>
-<img src="images/marek10.jpeg">
+<!-- PIPELINE -->
+<div class="pipeline">
+<span></span><span></span><span></span><span></span>
 </div>
 
-<div class="memory">
-<h3>Team Adventures</h3>
-<img src="images/marek19.jpeg">
-</div>
-
-<div class="memory">
-<h3>Office Legends</h3>
-<img src="images/marek20.jpeg">
-</div>
-
-<div class="memory">
-<h3>Holiday Deployments</h3>
-<img src="images/marek24.jpeg">
-</div>
-
-</section>
-
-<section class="random">
-
+<!-- RANDOM -->
 <h2>Random Memory Generator</h2>
-
 <button onclick="randomMemory()">Run Query</button>
 
 <br><br>
 
-<img id="randomImage" src="images/marek1.jpeg">
+<img id="randomImage" src="" />
 
-</section>
+<!-- GALLERY -->
+<h2>Memory Archive</h2>
 
-<section class="gallery">
-
-<h2>Full Memory Archive</h2>
-
-<div class="grid">
+<div class="gallery">
 
 <img src="images/marek1.jpeg">
 <img src="images/marek2.jpeg">
@@ -135,9 +98,15 @@ ORDER BY fun DESC
 
 </div>
 
-</section>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="closeModal()">
+<img id="modalImg">
+</div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+```
