@@ -1,4 +1,4 @@
-
+```javascript
 const images = [
 "marek1.jpeg","marek2.jpeg","marek3.jpeg","marek4.jpeg","marek5.jpeg",
 "marek6.jpeg","marek7.jpeg","marek8.jpeg","marek9.jpeg","marek10.jpeg",
@@ -11,21 +11,35 @@ const images = [
 function randomMemory(){
 
 const randomIndex = Math.floor(Math.random()*images.length);
-const image = images[randomIndex];
-
-const element = document.getElementById("randomImage");
-
-element.src = "images/" + image;
+document.getElementById("randomImage").src = "images/" + images[randomIndex];
 
 }
+
+/* BOOT */
 
 window.onload = function(){
 
 setTimeout(function(){
-
 document.getElementById("bootScreen").style.display="none";
 document.body.classList.remove("loadingState");
-
 },3000);
 
 }
+
+/* MODAL */
+
+const galleryImages = document.querySelectorAll(".gallery img");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+
+galleryImages.forEach(img => {
+img.addEventListener("click", function(){
+modal.style.display = "flex";
+modalImg.src = this.src;
+});
+});
+
+function closeModal(){
+modal.style.display = "none";
+}
+```
