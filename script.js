@@ -13,16 +13,12 @@ const randomIndex = Math.floor(Math.random()*images.length);
 document.getElementById("randomImage").src = "images/" + images[randomIndex];
 }
 
-/* BOOT */
-
 window.onload = function(){
 setTimeout(function(){
 document.getElementById("bootScreen").style.display="none";
 document.body.classList.remove("loadingState");
-},2500);
+},2000);
 }
-
-/* MODAL */
 
 const galleryImages = document.querySelectorAll(".gallery img");
 const modal = document.getElementById("modal");
@@ -38,3 +34,4 @@ modalImg.src = this.src;
 function closeModal(){
 modal.style.display = "none";
 }
+

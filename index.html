@@ -3,7 +3,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Memory Integration System</title>
+<title>Azure Memory Pipeline</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,51 +11,48 @@
 
 <!-- BOOT -->
 <div id="bootScreen">
-<h1>Azure Memory Pipeline</h1>
-<p>Initializing system...</p>
+<h1>Azure Data Factory</h1>
+<p>Loading pipeline...</p>
 
 <div class="progress-bar">
 <div class="progress"></div>
 </div>
-
-<p>Loading memories...</p>
 </div>
 
 <div class="main">
 
-<h1>Memory Integration System</h1>
-<h2>Marek • v4.0</h2>
+<h1>Pipeline: Marek_40</h1>
 
-<!-- PIPELINE -->
+<!-- PIPELINE CANVAS -->
 
-<div class="pipelineRow">
+<div class="canvas">
 
-<div class="node">
-<h3>Source</h3>
-<p>marek_memories</p>
+<div class="node source">
+<div class="icon">📦</div>
+<p>Source</p>
 </div>
 
-<div class="arrow">→</div>
+<div class="arrow-line"></div>
 
-<div class="node">
-<h3>Transform</h3>
-<p>Sort by fun level</p>
+<div class="node transform">
+<div class="icon">⚙️</div>
+<p>Transform</p>
 </div>
 
-<div class="arrow">→</div>
+<div class="arrow-line"></div>
 
-<div class="node">
-<h3>Load</h3>
-<p>Legendary Output</p>
+<div class="node load">
+<div class="icon">💾</div>
+<p>Load</p>
 </div>
 
 </div>
 
-<!-- RESULT -->
+<!-- OUTPUT -->
 
 <div class="azureBox">
 
-<h3>Pipeline Output</h3>
+<h3>Output</h3>
 
 <p>✔ Dancefloor mode: ENABLED</p>
 <p>✔ Humour engine: ACTIVE</p>
@@ -66,17 +63,14 @@
 
 <!-- RANDOM -->
 
-<h2>Run Query</h2>
-
+<h2>Run Pipeline</h2>
 <button onclick="randomMemory()">Execute</button>
-
-<br><br>
 
 <img id="randomImage">
 
 <!-- GALLERY -->
 
-<h2>Memory Archive</h2>
+<h2>Memory Dataset</h2>
 
 <div class="gallery">
 
@@ -124,3 +118,4 @@
 
 </body>
 </html>
+
