@@ -1,121 +1,174 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Azure Memory Pipeline</title>
+<title>Azure Memory Factory</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="loadingState">
 
-<!-- BOOT -->
+<!-- LOADING -->
 <div id="bootScreen">
-<h1>Azure Data Factory</h1>
-<p>Loading pipeline...</p>
-
-<div class="progress-bar">
-<div class="progress"></div>
-</div>
+<h1>Microsoft Azure</h1>
+<p>Loading Data Factory...</p>
+<div class="progress-bar"><div class="progress"></div></div>
 </div>
 
+<!-- TOP BAR -->
+<div class="topbar">
+
+<!-- LEFT -->
+<div class="top-left">
+<span class="logo">Microsoft Azure</span>
+
+<span class="divider">|</span>
+
+<span class="breadcrumb">
+Data Factory
+<span class="arrow">›</span>
+Marek_40th
+</span>
+</div>
+
+<!-- SEARCH -->
+<div class="top-search">
+<input type="text" placeholder="Search factory and documentation">
+</div>
+
+<!-- RIGHT -->
+<div class="top-right">
+
+<img src="images\icons\00002-icon-service-Alerts.svg" class="top-icon">
+<img src="images\icons\10013-icon-service-Help-and-Support.svg" class="top-icon">
+<img src="images\icons\10805-icon-service-Gear.svg" class="top-icon">
+
+<div class="user-box">
+<span>marek_v4.0@legendary.com</span>
+<div class="avatar"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<div class="nav-item active" data-label="Dashboard">
+<img src="images\icons\10015-icon-service-Dashboard.svg">
+</div>
+
+<div class="nav-item" data-label="Author">
+<img src="images\icons\10787-icon-service-Code.svg">
+</div>
+
+<div class="nav-item" data-label="Settings">
+<img src="images\icons\10805-icon-service-Gear.svg">
+</div>
+
+<div class="nav-item" data-label="Monitor">
+<img src="images\icons\10783-icon-service-Browser.svg">
+</div>
+
+<div class="nav-item" data-label="Help">
+<img src="images\icons\10013-icon-service-Help-and-Support.svg">
+</div>
+
+</div>
+
+<!-- MAIN -->
 <div class="main">
 
-<h1>Pipeline: Marek_40</h1>
+<h1>Memory Factory</h1>
+<h2>Marek_40th</h2>
 
-<!-- PIPELINE CANVAS -->
+<button class="newBtn" onclick="randomMemory()">Execute Pipeline</button>
+
+<!-- LOGI -->
+<div class="logBox" id="logBox">
+<p>> Pipeline initialized...</p>
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+
+<div class="card"><h3>Ingest</h3><p>Import memories from life events</p></div>
+<div class="card"><h3>Orchestrate</h3><p>Control chaos with humour engine</p></div>
+<div class="card"><h3>Transform</h3><p>Convert chaos → legendary memories</p></div>
+<div class="card"><h3>Hot Chocolate</h3><p>Marshmallows dependency: CRITICAL</p></div>
+
+</div>
+
+<!-- PIPELINE -->
+<h2>Pipeline Editor</h2>
 
 <div class="canvas">
-
-<div class="node source">
-<div class="icon">📦</div>
-<p>Source</p>
+<div class="node" onclick="selectNode(this,'Source: memories loaded')">📦 Source</div>
+<div class="arrow"></div>
+<div class="node" onclick="selectNode(this,'Transform: chaos → fun')">⚙️ Transform</div>
+<div class="arrow"></div>
+<div class="node" onclick="selectNode(this,'Output: legendary Marek')">💾 Output</div>
 </div>
 
-<div class="arrow-line"></div>
+<p id="pipelineStatus" class="statusText">
+Click node to inspect pipeline step...
+</p>
 
-<div class="node transform">
-<div class="icon">⚙️</div>
-<p>Transform</p>
-</div>
-
-<div class="arrow-line"></div>
-
-<div class="node load">
-<div class="icon">💾</div>
-<p>Load</p>
-</div>
-
-</div>
-
-<!-- OUTPUT -->
-
-<div class="azureBox">
-
-<h3>Output</h3>
-
-<p>✔ Dancefloor mode: ENABLED</p>
-<p>✔ Humour engine: ACTIVE</p>
-<p>✔ Hot chocolate with marshmallows: CRITICAL</p>
-<p>✔ Legendary integrations: 100%</p>
-
-</div>
-
-<!-- RANDOM -->
-
-<h2>Run Pipeline</h2>
-<button onclick="randomMemory()">Execute</button>
-
+<!-- RANDOM IMAGE -->
 <img id="randomImage">
 
-<!-- GALLERY -->
+<!-- BIRTHDAY -->
+<h2>🎂 Birthday Deployment</h2>
 
-<h2>Memory Dataset</h2>
+<div class="bdayBox">
 
-<div class="gallery">
+<img src="images/marek29.jpeg" class="bdayImg">
 
-<img src="images/marek1.jpeg">
-<img src="images/marek2.jpeg">
-<img src="images/marek3.jpeg">
-<img src="images/marek4.jpeg">
-<img src="images/marek5.jpeg">
-<img src="images/marek6.jpeg">
-<img src="images/marek7.jpeg">
-<img src="images/marek8.jpeg">
-<img src="images/marek9.jpeg">
-<img src="images/marek10.jpeg">
-<img src="images/marek11.jpeg">
-<img src="images/marek12.jpeg">
-<img src="images/marek13.jpeg">
-<img src="images/marek14.jpeg">
-<img src="images/marek15.jpeg">
-<img src="images/marek16.jpeg">
-<img src="images/marek17.jpeg">
-<img src="images/marek18.jpeg">
-<img src="images/marek19.jpeg">
-<img src="images/marek20.jpeg">
-<img src="images/marek21.jpeg">
-<img src="images/marek22.jpeg">
-<img src="images/marek23.jpeg">
-<img src="images/marek24.jpeg">
-<img src="images/marek25.jpeg">
-<img src="images/marek26.jpeg">
-<img src="images/marek27.jpeg">
-<img src="images/marek28.jpeg">
-<img src="images/marek29.jpeg">
+<div class="bdayText">
+<h3>Happy 40th Marek 🚀</h3>
+
+<p>
+SELECT happiness, health, fun<br>
+FROM life<br>
+WHERE age >= 40<br>
+ORDER BY joy DESC;
+</p>
+
+<p>
+✔ Unlimited laughs<br>
+✔ Zero bugs in life<br>
+✔ Infinite hot chocolate refills ☕🍫<br>
+✔ Marshmallows: ALWAYS ENABLED
+</p>
 
 </div>
+</div>
+
+<!-- GALLERY -->
+<h2>Memory Dataset</h2>
+
+<div class="gallery" id="gallery"></div>
 
 </div>
 
 <!-- MODAL -->
-
 <div id="modal" class="modal" onclick="closeModal()">
+
+<button class="nav left" onclick="prevImage(event)">‹</button>
+
+<div class="modal-content" onclick="event.stopPropagation()">
 <img id="modalImg">
 </div>
+
+<button class="nav right" onclick="nextImage(event)">›</button>
+
+</div>
+
+<!-- CONFETTI -->
+<canvas id="confettiCanvas"></canvas>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-
