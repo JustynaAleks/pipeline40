@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -9,10 +9,10 @@
 
 <body class="loadingState">
 
-<!-- BOOT SCREEN -->
+<!-- BOOT -->
 <div id="bootScreen">
-<h1 class="glow">Memory Integration System</h1>
-<p>Booting Azure Memory Pipeline...</p>
+<h1>Azure Memory Pipeline</h1>
+<p>Initializing system...</p>
 
 <div class="progress-bar">
 <div class="progress"></div>
@@ -21,25 +21,41 @@
 <p>Loading memories...</p>
 </div>
 
-<!-- MAIN -->
 <div class="main">
 
-<h1 class="glow">Memory Integration System</h1>
-<h2>Marek</h2>
+<h1>Memory Integration System</h1>
+<h2>Marek • v4.0</h2>
 
-<p>Version: 4.0</p>
-<p>Primary Stack: SQL / Azure</p>
+<!-- PIPELINE -->
 
-<!-- SQL SECTION -->
+<div class="pipelineRow">
+
+<div class="node">
+<h3>Source</h3>
+<p>marek_memories</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="node">
+<h3>Transform</h3>
+<p>Sort by fun level</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="node">
+<h3>Load</h3>
+<p>Legendary Output</p>
+</div>
+
+</div>
+
+<!-- RESULT -->
+
 <div class="azureBox">
 
-<p>SELECT * FROM marek_memories</p>
-<p>WHERE year >= 2023</p>
-<p>ORDER BY fun DESC</p>
-
-<br>
-
-<p><b>Result:</b></p>
+<h3>Pipeline Output</h3>
 
 <p>✔ Dancefloor mode: ENABLED</p>
 <p>✔ Humour engine: ACTIVE</p>
@@ -48,20 +64,18 @@
 
 </div>
 
-<!-- PIPELINE -->
-<div class="pipeline">
-<span></span><span></span><span></span><span></span>
-</div>
-
 <!-- RANDOM -->
-<h2>Random Memory Generator</h2>
-<button onclick="randomMemory()">Run Query</button>
+
+<h2>Run Query</h2>
+
+<button onclick="randomMemory()">Execute</button>
 
 <br><br>
 
-<img id="randomImage" src="" />
+<img id="randomImage">
 
 <!-- GALLERY -->
+
 <h2>Memory Archive</h2>
 
 <div class="gallery">
@@ -101,6 +115,7 @@
 </div>
 
 <!-- MODAL -->
+
 <div id="modal" class="modal" onclick="closeModal()">
 <img id="modalImg">
 </div>
@@ -109,4 +124,3 @@
 
 </body>
 </html>
-```

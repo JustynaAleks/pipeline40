@@ -1,4 +1,4 @@
-```javascript
+
 const images = [
 "marek1.jpeg","marek2.jpeg","marek3.jpeg","marek4.jpeg","marek5.jpeg",
 "marek6.jpeg","marek7.jpeg","marek8.jpeg","marek9.jpeg","marek10.jpeg",
@@ -9,21 +9,17 @@ const images = [
 ];
 
 function randomMemory(){
-
 const randomIndex = Math.floor(Math.random()*images.length);
 document.getElementById("randomImage").src = "images/" + images[randomIndex];
-
 }
 
 /* BOOT */
 
 window.onload = function(){
-
 setTimeout(function(){
 document.getElementById("bootScreen").style.display="none";
 document.body.classList.remove("loadingState");
-},3000);
-
+},2500);
 }
 
 /* MODAL */
@@ -42,4 +38,3 @@ modalImg.src = this.src;
 function closeModal(){
 modal.style.display = "none";
 }
-```
