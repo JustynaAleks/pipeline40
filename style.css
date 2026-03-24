@@ -14,6 +14,10 @@ color:white;
 height:48px;
 padding:0 16px;
 font-size:14px;
+
+position:sticky;
+top:0;
+z-index:9999;
 }
 
 /* LEFT */
@@ -75,26 +79,33 @@ gap:10px;
 }
 
 .avatar{
-width:28px;
-height:28px;
-border-radius:50%;
-background:#ccc;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ccc;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 /* SIDEBAR */
 /* SIDEBAR BASE */
 .sidebar{
 position:fixed;
-top:50px;
+top:48px;
 left:0;
 width:56px;
-height:100%;
+height:calc(100vh - 48px);
 background:#ffffff;
 border-right:1px solid #e1e1e1;
 display:flex;
 flex-direction:column;
 align-items:center;
 padding-top:10px;
+overflow:hidden;
 }
 
 /* ITEM */
@@ -163,8 +174,27 @@ opacity:1;
 
 /* MAIN */
 .main{
-margin-left:80px;
-padding:30px;
+margin-left:56px;
+}
+
+.hero{
+background-color:#f3f6fb;
+background-image:url("images/bg-azure.png");
+background-repeat:no-repeat;
+background-position:right center;
+background-size: 100%;
+padding:40px 30px 80px 30px;
+
+min-height:300px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+
+.hero > *{
+position:relative;
+z-index:1;
 }
 
 /* BUTTON */
@@ -178,18 +208,57 @@ cursor:pointer;
 }
 
 /* CARDS */
+/* CARDS GRID */
 .cards{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
-margin:30px 0;
+margin-top:20px;
 }
 
+
+.cards-section{
+padding:40px 0;
+}
+
+/* CARD */
 .card{
+display:flex;
+align-items:center;
+gap:16px;
+transition:0.2s;
+cursor:pointer;
 background:white;
 padding:20px;
 border-radius:6px;
 box-shadow:0 2px 6px rgba(0,0,0,0.1);
+
+height:120px;
+}
+
+.card:hover{
+box-shadow:0 6px 16px rgba(0,0,0,0.15);
+transform:translateY(-2px);
+}
+
+/* IKONA */
+.card-icon{
+width:48px;
+height:48px;
+object-fit:contain;
+}
+
+/* TEKST */
+.card-text h3{
+margin:0;
+font-size:16px;
+font-weight:600;
+}
+
+.card-text p{
+margin:5px 0 0 0;
+font-size:14px;
+color:#605e5c;
 }
 
 /* PIPELINE */
@@ -288,7 +357,7 @@ background:rgba(0,0,0,0.85);
 justify-content:center;
 align-items:center;
 z-index:999;
-overflow:auto; /* 🔥 ważne */
+overflow:auto;
 }
 
 /* kontener obrazu */
@@ -304,7 +373,7 @@ align-items:center;
 .modal img{
 max-width:100%;
 max-height:90vh;
-object-fit:contain; /* 🔥 KLUCZ */
+object-fit:contain;
 border-radius:8px;
 }
 
@@ -406,7 +475,7 @@ right:20px;
 }
 
 .nav{
-z-index:1001; /* 🔥 ważne */
+z-index:1001;
 pointer-events:auto;
 }
 
@@ -422,4 +491,16 @@ pointer-events:auto;
 
 .modal img{
 pointer-events:auto;
+}
+
+.pipeline-run{
+margin-top:40px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.pipeline-run .logBox{
+width:500px;
 }

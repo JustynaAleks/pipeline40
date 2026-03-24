@@ -45,7 +45,7 @@ Marek_40th
 
 <div class="user-box">
 <span>marek_v4.0@legendary.com</span>
-<div class="avatar"></div>
+<div class="avatar"><p><b>MS</b></p></div>
 </div>
 
 </div>
@@ -79,27 +79,39 @@ Marek_40th
 
 <!-- MAIN -->
 <div class="main">
-
+<div class="hero">
 <h1>Memory Factory</h1>
 <h2>Marek_40th</h2>
 
-<button class="newBtn" onclick="randomMemory()">Execute Pipeline</button>
 
-<!-- LOGI -->
-<div class="logBox" id="logBox">
-<p>> Pipeline initialized...</p>
-</div>
 
 <!-- CARDS -->
+ <div class="cards-section">
+
 <div class="cards">
 
-<div class="card"><h3>Ingest</h3><p>Import memories from life events</p></div>
-<div class="card"><h3>Orchestrate</h3><p>Control chaos with humour engine</p></div>
-<div class="card"><h3>Transform</h3><p>Convert chaos → legendary memories</p></div>
-<div class="card"><h3>Hot Chocolate</h3><p>Marshmallows dependency: CRITICAL</p></div>
-
+<div class="card">
+    <img src="images\icons\ingest.png" class="card-icon">
+    <div class="card-text">
+    <h3>Ingest</h3><p>Import memories from life events</p></div></div>
+<div class="card">
+    <img src="images\icons\orch.png" class="card-icon">
+    <div class="card-text">
+    <h3>Orchestrate</h3><p>Control chaos with humour engine</p></div></div>
+<div class="card">
+    <img src="images\icons\transform.png" class="card-icon">
+    <div class="card-text">
+    <h3>Transform</h3><p>Convert chaos → legendary memories</p></div></div>
+<div class="card">
+    <img src="images\icons\ssis.png" class="card-icon">
+     <div class="card-text">
+     <h3>Hot Chocolate</h3>
+     <p>Marshmallows dependency: CRITICAL</p>
+    </div>
+    </div>
 </div>
-
+</div>
+</div>
 <!-- PIPELINE -->
 <h2>Pipeline Editor</h2>
 
@@ -115,8 +127,20 @@ Marek_40th
 Click node to inspect pipeline step...
 </p>
 
-<!-- RANDOM IMAGE -->
+
+<h2>Run Pipeline</h2>
+
+<div class="pipeline-run">
+
+<button class="newBtn" onclick="randomMemory()">Execute Pipeline</button>
+
+<div class="logBox" id="logBox">
+<p>> Pipeline initialized...</p>
+</div>
+
 <img id="randomImage">
+
+</div>
 
 <!-- BIRTHDAY -->
 <h2>🎂 Birthday Deployment</h2>
