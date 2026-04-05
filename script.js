@@ -1,5 +1,5 @@
 // ===== CONFIG =====
-const MAX_IMAGES = 38;
+const MAX_IMAGES = 39;
 const images = [];
 
 for(let i=1;i<=MAX_IMAGES;i++){
