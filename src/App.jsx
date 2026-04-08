@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -36,7 +36,7 @@ function App() {
 
   // 🚀 Routing
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/pipeline" element={<Pipeline />} />
@@ -56,7 +56,7 @@ function App() {
     🎈
   </div>
 ))}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
