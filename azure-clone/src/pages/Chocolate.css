@@ -1,0 +1,90 @@
+.chocolate-page {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.choco-title {
+  font-size: 38px;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+.choco-btn {
+  padding: 10px 20px;
+  background: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.choco-btn:hover {
+  background: #5a2e0e;
+}
+
+/* TERMINAL */
+.terminal {
+  margin-top: 30px;
+
+  background: #0d0d0d;
+  color: #00ff9c;
+
+  padding: 30px;
+  border-radius: 10px;
+
+  width: 800px;
+  max-width: 100%;
+  min-height: 260px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+
+  overflow-y: auto;
+}
+
+.terminal p {
+  margin: 6px 0;
+}
+
+/* STATES */
+.error {
+  color: #ff4d4f;
+}
+
+.warn {
+  color: #ffa940;
+}
+
+.success {
+  color: #52c41a;
+  font-weight: bold;
+}
+
+/* CURSOR */
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  color: #00ff9c;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* FINAL IMAGE */
+.choco-final {
+  margin-top: 30px;
+}
+
+.choco-final img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

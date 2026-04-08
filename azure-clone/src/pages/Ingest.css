@@ -1,0 +1,44 @@
+/* ===== INGEST PAGE ===== */
+
+.ingest-page {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.ingest-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0078d4;
+  margin-bottom: 10px;
+}
+
+.ingest-status {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  min-height: 20px;
+}
+
+.ingest-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingest-image {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* FADE */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

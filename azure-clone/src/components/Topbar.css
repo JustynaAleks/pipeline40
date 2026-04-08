@@ -1,0 +1,191 @@
+.topbar {
+  height: 56px;
+  background: #0078d4;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+/* LEFT */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.divider {
+  opacity: 0.6;
+}
+
+.factory {
+  font-weight: 500;
+}
+
+/* CENTER */
+.topbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+  padding: 6px 14px;
+  transition: 0.2s;
+
+  width: 400px;
+}
+
+.search:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search input::placeholder {
+  color: #e0e0e0;
+}
+
+/* RIGHT */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-right svg {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.topbar-right svg:hover {
+  opacity: 0.8;
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.email {
+  font-weight: 500;
+}
+
+.company {
+  font-size: 11px;
+  opacity: 0.8;
+}
+.user img {
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+
+  background: #d13438;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+
+  min-width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 2px solid #0078d4;
+}
+
+.topbar-right svg {
+  opacity: 0.9;
+}
+
+.topbar-right svg:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+.factory {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.factory:hover {
+  text-decoration: underline;
+}
+
+.search-message {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 999;
+  animation: fadeInOut 2.5s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -10px); }
+}
